@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*seccion del header-----------------------------------------------------------------------------------*/
+header {
+    background-image:url("../assets/img/backheader.png") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+} 
+
+header img {
+    width: 100%;
+    height: 3.5rem;
+}
+
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navBar a {
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+.navBar li{
+    list-style: none;
+    padding: .5rem;
+    border:none ;
+    border-radius: 1.25rem;
+    margin: .5rem;
+    background-color: #9E6003;
+    font-size: 1rem;
+    font-family: "Roboto Slab";
+}
+/*seccion del header-----------------------------------------------------------------------------------*/
+
+
+
+/*seccion footer-----------------------------------------------------------------------------------*/
+.seccionPieDePagina {
+    background-image:url("../assets/img/pie-de-pagina.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+footer img {
+    width: 100%;
+    height: 3rem;
+}
+
+.iconosRedesSociales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.iconosRedesSociales li {
+    list-style: none;
+}
+/*seccion footer-----------------------------------------------------------------------------------*/
+
+
+
+/*titulo principal de cada pagina-----------------------------------------------------------------------------------*/
+.seccionTituloUno h1{
+    background-color: #376C16;
+    word-spacing:4rem;
+    text-align: center;
+    padding: .5rem;
+}
+.seccionTituloPrincipal h1{
+    background-color: #376C16;
+    text-align: center;
+    padding: .5rem;
+}
+/*titulo principal de cada pagina-----------------------------------------------------------------------------------*/
+
+
+
+/*caracteristicas de titulos y parrafos-----------------------------------------------------------------*/
+h1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight:normal;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-transform:capitalize;
+}
+
+h2{
+    font-family: "Roboto Slab" , sans-serif;
+    font-weight:normal;
+    color: #FFFFFF;
+    font-size: 1.375rem;
+    text-transform:capitalize;
+}
+
+h3{
+    font-family: "Quicksand", sans-serif;
+    font-weight:bolder;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-family: "Quicksand", sans-serif;
+    font-weight:bold;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+    font-weight:normal;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+/*caracteristicas de titulos y parrafos-----------------------------------------------------------------*/
+
+
+/*main Recomendaciones del Mes-----------------------------------------------------------------*/
+.seccionRecomendacionesDelMes {
+    background-image:url("../assets/img/back1.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+
+
+.containerCard1 {
+    width: 20rem;
+    height: 35rem;
+    background-color: #116D5D;
+    border-radius: .75rem;
+    text-align: left;
+    padding: 1rem;
+    margin-block: .5rem;
+    line-height: 2rem; /* espacio entre lineas de texto*/
+}
+
+.containerCard1 .imagenCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.containerCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+/*main Recomendaciones del mes-----------------------------------------------------------------*/
+
+
+/*main Dato de la semana----------------------------------------------------------------------------*/
+.seccionDatoDeLaSemana {
+    background-color: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    gap: 2rem;
+}
+
+.div2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+}
+
+.div2 div {
+    width: 31.25rem;
+}
+
+.div2 div img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.div3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*main Dato de la semana----------------------------------------------------------------------------*/
+
+
+
+/*main TU PROXIMO DESTINO----------------------------------------------------------------------------*/
+.contenedorProximoDestino {
+    background-image: url("../assets/img/backTuProximoDestino.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.articuloCard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30rem;
+    height: 34.375rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+    background-color: #0C0C0C;
+    border-radius: .75rem;
+    text-align: left;
+    line-height: 2rem; /* espacio entre lineas de texto*/
+}
+
+.articuloCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*main TU PROXIMO DESTINO----------------------------------------------------------------------------*/    
+
+
+
+/*main QUE SON LOS PUEBLOS MAGICOS----------------------------------------------------------------------------*/    
+.contenedorQueSonLosPueblosMagicos {
+    background-image: url("../assets/img/back3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+.containerLogoPueblosMagicos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+}
+
+.containerLogoPueblosMagicos div {
+    width: 28.125rem;
+    text-align: left;
+}
+
+.containerLogoPueblosMagicos div img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.containerLogoPueblosMagicos li {
+    list-style:inside;
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    font-weight:normal;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+/*main QUE SON LOS PUEBLOS MAGICOS----------------------------------------------------------------------------*/ 
+
+
+
+
+
+
+
+
+
+
+.seccionTuProximoDestino{
+    background-image:url("../assets/img/backTuProximoDestino.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seccionQueSonLosPueblosMagicos {
+    background-image:url("../assets/img/back3.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.seccionAventura {
+    background-image:url("../assets/img/back4.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seccionRegistrate {
+    background-image:url("../assets/img/back5.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
