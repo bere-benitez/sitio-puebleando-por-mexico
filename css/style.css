@@ -264,6 +264,12 @@ p {
     height: 100%;
     object-fit: contain;
 }
+
+.video2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 /*main TU PROXIMO DESTINO----------------------------------------------------------------------------*/    
 
 
@@ -318,23 +324,89 @@ p {
 
 
 
-
-
-
-
-
-
-.seccionTuProximoDestino{
-    background-image:url("../assets/img/backTuProximoDestino.png") ;
+/*main AVENTURA------------------------------------------------------------------------------------------------*/ 
+.gridContainer {
+    background-image: url("../assets/img/back4.png");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    '1 1'
+    '2 3'
+    '4 4';
+    gap: 1rem;
+    padding: 1rem;
+    line-height: 2rem;
 }
 
-.seccionQueSonLosPueblosMagicos {
-    background-image:url("../assets/img/back3.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+.item1 {
+    background-color:#AB5835;
+    grid-area: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.75rem;
 }
+.item1 div {
+    width: 34.375rem;
+}
+.item1 img {
+    width: 90%;
+    object-fit: contain;
+}
+
+.item2 {
+    background-color: #376C16;
+    grid-area: 2;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.75rem;
+    text-align:justify;
+}
+.item2 img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.item3 {
+    background-color:#116D5D ;
+    grid-area: 3;
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.75rem;
+    text-align:justify;
+}
+item3 img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.item4 {
+    grid-area: 4;
+}
+
+
+
+
 
 
 
