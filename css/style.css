@@ -46,6 +46,10 @@ header img {
     font-size: 1rem;
     font-family: "Roboto Slab";
 }
+.navBar a:hover{
+    text-decoration:underline;
+}
+
 /*seccion del header-----------------------------------------------------------------------------------*/
 
 
@@ -227,8 +231,51 @@ p {
     justify-content: center;
 }
 /*main Dato de la semana----------------------------------------------------------------------------*/
-
-
+/*main TRABAJANDO CON GRIDS----------------------------------------------------------------------------*/
+.gridContainer {
+    display: grid;
+    background-color:#0C0C0C;
+    width: 100%;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 3rem 9rem 9rem 9rem 9rem 9rem 9rem;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.gridContainer h2{
+    grid-column: 1/11;
+}
+.img1grid {
+    grid-column:1/5;
+    grid-row: 2/5;
+}
+.gridContainer .p1 {
+    grid-column:5/9;
+    grid-row: 2/3;
+}
+.img2grid{
+    grid-column:6/11;
+    grid-row: 3/7;
+}
+.img4grid{
+    grid-column:3/6;
+    grid-row: 4/6;
+}
+.gridContainer .p2 {
+    grid-column:1/5;
+    grid-row: 6/7;
+}
+.img3grid{
+    grid-column:6/9;
+    grid-row: 5/8;
+}
 
 /*main TU PROXIMO DESTINO----------------------------------------------------------------------------*/
 .contenedorProximoDestino {
@@ -321,106 +368,219 @@ p {
 }
 /*main QUE SON LOS PUEBLOS MAGICOS----------------------------------------------------------------------------*/ 
 
-
-
-
 /*main AVENTURA------------------------------------------------------------------------------------------------*/ 
-.gridContainer {
+.contedorAventura {
     background-image: url("../assets/img/back4.png");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-areas: 
-    '1 1'
-    '2 3'
-    '4 4';
-    gap: 1rem;
-    padding: 1rem;
     line-height: 2rem;
+    gap: 2rem;
+    align-items: center;
+    
 }
-
-.item1 {
-    background-color:#AB5835;
-    grid-area: 1;
+.cardAventura {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     padding: 1rem;
     align-items: center;
-    gap: 1rem;
+    background-color:#116D5D;
     border-radius: 0.75rem;
 }
-.item1 div {
-    width: 34.375rem;
-}
-.item1 img {
-    width: 90%;
-    object-fit: contain;
+.cardAventura div {
+    width: 31.25rem;
 }
 
-.item2 {
-    background-color: #376C16;
-    grid-area: 2;
-    display: flex;
-    flex-direction: column;
-    width: 35rem;
-    height: 100%;
-    justify-content: space-evenly;
-    padding: 1rem;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 0.75rem;
-    text-align:justify;
-}
-.item2 img {
+.cardAventura img {
+    object-fit: contain;
     width: 100%;
-    object-fit: contain;
 }
 
-.item3 {
-    background-color:#116D5D ;
-    grid-area: 3;
-    display: flex;
-    flex-direction: column;
-    width: 35rem;
-    height: 100%;
-    justify-content: space-evenly;
-    padding: 1rem;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 0.75rem;
-    text-align:justify;
-}
-item3 img {
+.video3 {
     width: 100%;
-    object-fit: contain;
-}
-
-.item4 {
-    grid-area: 4;
+    display: flex;
+    justify-content: center;
 }
 
 
 
+/*main AVENTURA------------------------------------------------------------------------------------------------*/ 
 
 
-
-
-.seccionAventura {
-    background-image:url("../assets/img/back4.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+/*main registrate------------------------------------------------------------------------------------------------*/ 
 .seccionRegistrate {
     background-image:url("../assets/img/back5.png") ;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+    line-height: 2rem;
+    }
+
+    .registrateForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+    line-height: 2rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight:bold;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    }
+
+
+    .navBarRegistrate a{
+    padding: .5rem;
+    border:none ;
+    border-radius: 1.25rem;
+    margin: .5rem;
+    background-color: #9E6003;
+    font-size: 1rem;
+    font-family: "Roboto Slab";
+    color: #FFFFFF;
+    list-style: none;
+    text-decoration: none;
+    }
+
+    .navBarRegistrate li{
+        list-style: none;
+    }
+.seccionheaderRegistrate{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
 }
+
+
+
+/*media queries-------------------------------------------------------------------------------*/
+@media (max-width:1024px){
+    .seccionTituloUno h1{
+        word-spacing:2rem;
+    }
+    .containerCard1 {
+        width: 15rem;
+    }
+    .div2 div {
+        width: 26.25rem;
+    }
+    .cardAventura div {
+        width: 25rem;
+    }
+    .articuloCard {
+        width: 25rem;
+        height: 34.375rem;
+    }
+    footer img {
+        width: 100%;
+        height: 2.5rem;
+    }
+    
+}
+
+
+@media (max-width:768px){
+
+    header {
+        justify-content: center;
+    } 
+    .seccionRecomendacionesDelMes {
+        background-image:url("../assets/img/backTablet1.png") ;
+    }
+    .seccionTituloUno h1{
+        word-spacing:1rem;
+        font-size: 1.375rem;
+    }
+    .containerCard1 {
+        width: 20rem;
+    }
+    header img {
+        width: 100%;
+        height: 3rem;
+    }
+    .navBar li{
+        font-size: .75rem;
+        font-family: "Roboto Slab";
+    }
+    footer img {
+        width: 100%;
+        height: 2rem;
+    }
+    .contenedorProximoDestino {
+        background-image: url("../assets/img/backTablett2.png");
+    }
+    .articuloCard {
+        display: flex;
+        flex-wrap: wrap;
+        width: 35rem;
+    }
+    .contedorAventura {
+        background-image: url("../assets/img/backTablet4.png");
+    }
+
+    .cardAventura {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 100%;
+    }
+
+}
+
+@media (max-width:425px){
+    header img {
+        width: 100%;
+        height: 2.5rem;
+    }
+    h1 {
+        font-size: 1.375rem;
+    }
+    
+    h2{
+        font-size: 1.25rem;
+    }
+    
+    h3{
+        font-size: 1.125rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+    .articuloCard {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 100%;
+    }
+}
+
+
+
+
 
 
 
